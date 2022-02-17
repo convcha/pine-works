@@ -3,6 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "@emotion/cache": "^11.7.1",
+    "@emotion/react": "^11.7.1",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.4.2",
     "@remix-run/react": "^1.2.1",
     "@remix-run/serve": "^1.2.1",
     "cross-env": "^7.0.3",
