@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "lib": ["es2016", "esnext.asynciterable"],
+    "module": "ESNext",
+    "target": "ES6",
+    "moduleResolution": "Node"
+  },
+  "esModuleInterop": true,
+  "include": ["src"],
+  "exclude": ["dist", "build", "node_modules"]
+}
