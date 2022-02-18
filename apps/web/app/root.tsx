@@ -1,5 +1,4 @@
 import ClientStyleContext from "./mui/ClientStyleContext";
-import Layout from "./mui/Layout";
 import theme from "./mui/theme";
 import { withEmotionCache } from "@emotion/react";
 import { unstable_useEnhancedEffect as useEnhancedEffect } from "@mui/material";
@@ -13,6 +12,8 @@ import {
   ScrollRestoration,
   useCatch,
 } from "remix";
+
+import Layout from "~/components/Layout";
 
 interface DocumentProps {
   children: React.ReactNode;
