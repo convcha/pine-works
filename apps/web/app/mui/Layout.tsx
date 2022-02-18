@@ -19,7 +19,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               variant="h6"
               noWrap
               to="/"
-              sx={{ mr: 2, color: "white", textDecoration: "none" }}
+              sx={{
+                mr: 4,
+                color: "white",
+                textDecoration: "none",
+                fontFamily: "'Gorditas'",
+                fontSize: "1.9rem",
+              }}
             >
               PINE WORKS
             </MuiLink>
@@ -30,7 +36,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   component={Link}
                   to={page.to}
                   prefetch="intent"
-                  sx={{ my: 2, color: "white", display: "block" }}
+                  sx={{ my: 2, color: "white" }}
                 >
                   {page.name}
                 </MuiLink>
