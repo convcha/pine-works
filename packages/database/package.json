@@ -20,11 +20,12 @@
     "node": ">=14"
   },
   "prisma": {
-    "seed": "node --require esbuild-register prisma/seed.ts"
+    "seed": "dotenv -e ../../.env.development -- node --require esbuild-register prisma/seed.ts"
   },
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
-    "dev": "tsup src/index.ts --format esm,cjs --watch --dts"
+    "dev": "tsup src/index.ts --format esm,cjs --watch --dts",
+    "db:push": "dotenv -e ../../.env.development -- prisma db push"
   },
   "dependencies": {
     "@prisma/client": "^3.9.2"
