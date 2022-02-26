@@ -29,9 +29,11 @@
   },
   "sideEffects": false,
   "scripts": {
-    "postinstall": "remix setup node",
+    "postinstall": "run-s delete-remix setup-remix",
     "build": "cross-env NODE_ENV=production remix build",
     "dev": "cross-env NODE_ENV=development remix dev",
-    "start": "cross-env NODE_ENV=production remix-serve build"
+    "start": "cross-env NODE_ENV=production remix-serve build",
+    "delete-remix": "del-cli node_modules/remix/index.d.ts",
+    "setup-remix": "remix setup node"
   }
 }
